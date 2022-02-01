@@ -1,0 +1,38 @@
+/* form{
+    display: flex;
+    justify-content: center;
+} */
+
+body{
+    background-color: rgba(180, 143, 209, 0.425);
+}
+.input{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+button{
+    margin: 0px 10px;
+}
+.container{
+    padding: 50px;;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.todo1{
+    /* border: 1px solid red; */
+    color: magenta;
+}
+
+
+.todo2{
+    /* display: block;  */
+    color: mediumaquamarine;
+}
+
+.todo2 li {
+    text-decoration: line-through;
+}
