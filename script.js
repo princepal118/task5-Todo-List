@@ -32,20 +32,27 @@ btn.addEventListener('click',function myfunc(e){
             
             // var da = label.innerText;
             list.append(data);
-            myDiv2.append(list);         
-        }
+            myDiv2.append(list); 
 
+        }
         
         else if(e.currentTarget.checked == false){
-            var lid = document.querySelector('#hi')
-            console.log(lid.innerText);
+            var lid = document.querySelectorAll('#hi')
             console.log(label.innerText);
             
-            if(label.innerText.id === lid.innerText.id){
-                lid.remove();
+            for(let i=0;i<lid.length;i++){
+                if(label.innerText == lid[i].innerText){
+                    console.log(lid[i].innerText);
+                    lid[i].remove()
+                    
+                }
+
             }
+            
 
         }
+        
+
     });
 
 
